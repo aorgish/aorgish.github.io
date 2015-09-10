@@ -43,20 +43,29 @@
             margin: 4vw 0;
         }
         .logo-header {
-            height: 60px;
             margin: 3vw 0;
+            padding: 2vw 0;
             border-bottom: 1px solid;
+        }
+        .banner {
+            width:80%;
         }
         body {
             font-size: 1.7em;
         }
 
+        @media (max-width: 600px) {
+           .epm { width : 22%; }
+           .sdg { width : 64%; }
+           .sdg > img { width : 100%; }
+           .credo, h2, h1 { font-size: 1.4em; }
+           .banner { width : 100%; }
+        }
     </style>
     <div class="container restricted">
         <div class="logo-header">
-            <img class="pull-left" src="epam.png" />
-            
-            <img class="pull-right" src="sdg.png" />
+            <a href="http://www.epam.com"><img class="epm" src="epam.png" /></a>
+            <a class="pull-right sdg" href="http://www.un.org/sustainabledevelopment/"><img src="sdg.png" /></a>
         </div>
         <div class="text-center"> <a href="">RU</a> | <a href="">EN</a> </div>
         <main>
@@ -67,9 +76,16 @@
             <p>
                 EPAM will strengthen their partnership with the Universities in Belarus and is committed to the goal 4 of SGS's: 
             </p>
-            <h1>Education</h1>
-            <h2 class="credo"><a href="http://www.un.org/sustainabledevelopment/sustainable-development-goals/">Ensure inclusive and quality education for all and promote lifelong learning</a></h2>
+            <h1>EDUCATION</h1>
+            <p class="text-center">
+            <a href="http://www.un.org/sustainabledevelopment/sustainable-development-goals/">
+              <img class="banner"
+                   src="http://i1.wp.com/www.un.org/sustainabledevelopment/wp-content/uploads/2015/05/Goal-4.jpg" 
+                   alt="Ensure inclusive and quality education for all and promote lifelong learning"
+              />
 
+            </a>
+            </p>
             <p>
                 We invite students and IT specialists to participate in <strong>App4Education</strong> contest.
                 Let us think about tools for achieving the goal in Belarus and worldwide.
